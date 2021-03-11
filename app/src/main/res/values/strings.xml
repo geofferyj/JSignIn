@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JSignIn</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="grant_permissions">this app needs to access your camera</string>
+    <string name="grant">allow</string>
+    <string name="deny">deny</string>
+</resources>

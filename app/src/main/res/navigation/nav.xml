@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/camera_fragment">
+
+
+    <fragment
+        android:id="@+id/camera_fragment"
+        android:name="com.geofferyj.jsignin.views.fragments.CameraFragment"
+        android:label="CameraFragment"
+        tools:layout="@layout/fragment_camera">
+        <action
+            android:id="@+id/action_camera_fragment_to_imagePreviewFragment"
+            app:destination="@id/imagePreviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imagePreviewFragment"
+        android:name="com.geofferyj.jsignin.views.fragments.ImagePreviewFragment"
+        android:label="fragment_image_preview"
+        tools:layout="@layout/fragment_image_preview" >
+        <argument
+            android:name="image"
+            app:argType="com.geofferyj.jsignin.models.ImageData" />
+    </fragment>
+
+
+</navigation>

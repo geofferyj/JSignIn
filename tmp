@@ -1,0 +1,8 @@
+when face is detected
+	get image
+	get face
+	send to fragment
+		create bitmap of image
+		create bitmap of face bounds
+
+
